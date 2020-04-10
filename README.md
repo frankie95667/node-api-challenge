@@ -38,15 +38,21 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
-- [ ] Mention two parts of Express that you learned about this week.
+- [x] Mention two parts of Express that you learned about this week.
+	1. Express is commonly used as a way to create REST API to access data housed on a server via HTTP requests. 
+	2. Express is compatible with connect middleware, which is why express is so lightweight out of the box, but yet very powerful. It abstracts away the common tasks when setting up endpoints.
 
-- [ ] Describe Middleware?
+- [x] Describe Middleware?
+	* Middleware is a function or multiple functions that sit between an action/request and the response or completion of that action/request.
 
-- [ ] Describe a Resource?
+- [x] Describe a Resource?
+	* A resource is any data that you plan to make accessible to the client/application via some sort of API (ex REST API).
 
-- [ ] What can the API return to help clients know if a request was successful?
+- [x] What can the API return to help clients know if a request was successful?
+	* A status code of 2xx would be returned from the server.
 
-- [ ] How can we partition our application into sub-applications?
+- [x] How can we partition our application into sub-applications?
+	* We can use routers to break up the routes based on resource, and then .use from the express instance to establish name of the route (ex server.use('/api/resource', resourceRoute) )
 
 ## Minimum Viable Product
 
